@@ -4,13 +4,13 @@
 Copy the desired live template group file to your PhpStorm live template directory.
 
 ###OSX
-Copy to ~/Library/Preferences/WebIde<version number>/templates/ and reload PhpStorm.
+Copy to ```~/Library/Preferences/WebIde<version number>/templates/``` and reload PhpStorm.
 
 ###Linux
-Copy to ~/.WebIDE<version number>/config/templates/ and reload PhpStorm.
+Copy to ```~/.WebIDE<version number>/config/templates/``` and reload PhpStorm.
 
 ###Windows
-Copy to <your home directory>\.<product name><version number>\config\templates\ and reload PhpStorm.
+Copy to ```<your home directory>\.<product name><version number>\config\templates\``` and reload PhpStorm.
 
 Available templates are:
 
