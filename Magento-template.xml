@@ -1,0 +1,69 @@
+<templateSet group="Magento Template">
+  <template name="m:child" value="&lt;?php echo $this-&gt;getChildHtml('$child$'); ?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="child" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="m:__" value="&lt;?php echo $this-&gt;__('$string$'); ?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="m:helper" value="$var$ = Mage::helper('$helper$'); " toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="helper" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="m:model" value="$var$ = Mage::getModel('$model$');" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="model" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="m:url" value="&lt;?php echo $this-&gt;getUrl('$url$') ?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="m:skinUrl" value="&lt;?php echo $this-&gt;getSkinUrl('$skinUrl$') ?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="skinUrl" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="m:getConfig" value="&lt;?php echo Mage::getStoreConfig('$path$'); ?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="path" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="m:globalMessages" value="Mage::getSingleton('core/session')-&gt;addNotice('Notice message');&#10;Mage::getSingleton('core/session')-&gt;addSuccess('Success message');&#10;Mage::getSingleton('core/session')-&gt;addError('Error message');" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="m:log" value="Mage::log(sprintf(&quot;%s&quot;, $log$), Zend_Log::DEBUG, '$logfile$.log', true);" toReformat="false" toShortenFQNames="true">
+    <variable name="log" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="logfile" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="m:logHandles" value="Mage::log(sprintf(&quot;Handles: %s&quot;, print_r(Mage::app()-&gt;getLayout()-&gt;getUpdate()-&gt;getHandles(), true)), Zend_Log::DEBUG, '$logfile$.log', true);" toReformat="false" toShortenFQNames="true">
+    <variable name="logfile" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
